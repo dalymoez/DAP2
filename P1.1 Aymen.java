@@ -2,7 +2,7 @@ package Kurzaufgabe;
 
 public class Euclid {
 public static void main (String[] args ) {
-	if (!isInteger(args[0]) && !isInteger(args[1])) {
+	if (!isInteger(args[0]) || !isInteger(args[1])) {
 		System.out.println("Falscher Parameter - Nur Zahlen sind erlaubt!");
 		
 	}
