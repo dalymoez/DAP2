@@ -2,15 +2,16 @@ package Kurzaufgabe;
 
 public class Euclid {
 public static void main (String[] args ) {
-	if (!isInteger(args[0]) || !isInteger(args[1])) {
-		System.out.println("Falscher Parameter - Nur Zahlen sind erlaubt!");
-		
-	}
-	else {
-		if(args.length!= 2 ) {
+	if(args.length!= 2 ) {
 			System.out.println("Falsche Parameteranzahl! ");
 			
 		}
+	else {
+		if (!isInteger(args[0]) || !isInteger(args[1])) {
+		System.out.println("Falscher Parameter - Nur Zahlen sind erlaubt!");
+		
+	}
+		
 		else {
 			if (Integer.parseInt(args[0])<0 || Integer.parseInt(args[1])<0) {
 				System.out.println("Falscher Parameter - Nur Positive Zahlen sind erlaubt ");
